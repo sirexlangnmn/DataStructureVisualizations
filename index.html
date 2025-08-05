@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Structure Visualizer</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      background: #333;
+    }
+
+    nav a:hover {
+      background: #555;
+    }
+
+    nav a.active {
+      background: #007bff;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      text-align: center;
+      color: #aaa;
+      font-size: 18px;
+      margin-top: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 10px;
+    }
+
+    .card {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s ease, background 0.3s ease;
+      border: 1px solid #333;
+    }
+
+    .card:hover {
+      background-color: #333;
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 16px;
+    }
+
+    .card a {
+      background-color: #007bff;
+      color: white;
+      padding: 8px 14px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    .card a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Data Structure Visualizer</h1>
+  <p class="subtitle">Interactive visual tools to learn algorithms and data structures</p>
+
+  <div id="main-content"></div>
+
+  <script>
+    // Card data
+    const cards = [
+        {
+            title: 'Bubble Sort',
+            description: 'Visualize how Bubble Sort compares and swaps elements step-by-step.',
+            href: 'BubbleSortVisualizer/index.html',
+            buttonText: 'View'
+        },
+        {
+            title: 'Selection Sort',
+            description: 'Explore how Selection Sort finds the minimum and swaps iteratively.',
+            href: 'SelectionSortVisualizer/index.html',
+            buttonText: 'View'
+        },
+        {
+            title: 'Insertion Sort',
+            description: 'See how each element finds its correct position in the sorted part.',
+            href: '#',
+            buttonText: 'Coming Soon'
+        },
+        {
+            title: 'Merge Sort',
+            description: 'Dive into divide-and-conquer sorting with recursive merge logic.',
+            href: '#',
+            buttonText: 'Coming Soon'
+        },
+        {
+            title: 'Binary Tree',
+            description: 'Interactively visualize binary tree traversal, insertion, and deletion.',
+            href: '#',
+            buttonText: 'Coming Soon'
+        },
+        {
+            title: 'Graph Traversals',
+            description: 'Understand BFS and DFS through animated graph explorations.',
+            href: '#',
+            buttonText: 'Coming Soon'
+        }
+    ];
+
+    // Create grid container
+    const grid = document.createElement('div');
+    grid.className = 'grid';
+
+    // Create each card
+    cards.forEach(card => {
+        const cardDiv = document.createElement('div');
+        cardDiv.className = 'card';
+
+        const title = document.createElement('h3');
+        title.textContent = card.title;
+
+        const desc = document.createElement('p');
+        desc.textContent = card.description;
+
+        const link = document.createElement('a');
+        link.href = card.href;
+        link.textContent = card.buttonText;
+
+        // Append elements to card
+        cardDiv.appendChild(title);
+        cardDiv.appendChild(desc);
+        cardDiv.appendChild(link);
+
+        // Append card to grid
+        grid.appendChild(cardDiv);
+    });
+
+    // Append grid to body or a specific container
+    document.getElementById('main-content').appendChild(grid);
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .layout {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .visualization {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 20px;
+      position: relative;
+    }
+
+    .circle {
+      width: 50px;
+      height: 50px;
+      background-color: skyblue;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      transition: transform 0.5s ease, background 0.3s ease;
+      position: relative;
+    }
+
+    .highlight {
+      background-color: orange;
+      border: 2px solid yellow;
+      z-index: 2;
+    }
+
+    .done {
+      background-color: limegreen;
+    }
+
+    .connector {
+      position: absolute;
+      height: 4px;
+      background: yellow;
+      bottom: -12px;
+      border-radius: 2px;
+      z-index: 1;
+    }
+
+    #status {
+      margin-top: 20px;
+      font-size: 16px;
+      min-height: 24px;
+    }
+
+    pre.code-block {
+      background-color: #222;
+      color: #eee;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 8px;
+      overflow-x: auto;
+      max-width: 700px;
+      width: 100%;
+      font-family: monospace;
+      font-size: 15px;
+      line-height: 1.6;
+      white-space: pre-wrap;
+      position: relative;
+    }
+
+    .highlight-line {
+      background-color: rgba(255, 255, 0, 0.2);
+      border-left: 4px solid yellow;
+      padding-left: 6px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    button {
+      background: #444;
+      color: white;
+      padding: 10px 16px;
+      margin: 0 10px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background: #666;
+    }
+
+    button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .status-icon {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1em;
+    }
+
+    .status-icon img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #444;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      font-size: 14px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .back-button:hover {
+      background-color: #666;
+    }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Selection Sort Visualizer</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <button class="back-button" onclick="goBack()">← Back</button>
+
+  <h1>Selection Sort Visualizer</h1>
+
+  <div class="layout">
+    <div class="buttons">
+      <button id="autoBtn">Run Automatically</button>
+      <button id="stepBtn">Step-by-Step</button>
+    </div>
+
+    <div class="visualization">
+      <div class="container" id="arrayContainer"></div>
+      <div id="status"></div>
+    </div>
+
+    <div>
+      <h3 style="margin-top: 30px;">Python Code</h3>
+      <pre class="code-block" id="pythonCode">
+<span id="line1">def selection_sort(arr):</span>
+<span id="line2">    n = len(arr)</span>
+<span id="line3">    for i in range(n):</span>
+<span id="line4">        min_idx = i</span>
+<span id="line5">        for j in range(i + 1, n):</span>
+<span id="line6">            if arr[j] &lt; arr[min_idx]:</span>
+<span id="line7">                min_idx = j</span>
+<span id="line8">        if min_idx != i:</span>
+<span id="line9">            arr[i], arr[min_idx] = arr[min_idx], arr[i]</span>
+<span id="line10">    return arr</span>
+<span id="line11"></span>
+<span id="line12">scores = [5, 1, 4, 2, 8, 3, 7, 6, 10, 9]</span>
+<span id="line13">sorted_scores = selection_sort(scores)</span>
+<span id="line14">print("Sorted scores:", sorted_scores)</span>
+      </pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
