@@ -86,14 +86,14 @@ Bubble Sort was designed more for **clarity and learning** than speed. It’s a 
 ## 🔗 Live Demo
 
 > 🌐 Try the Bubble Sort visualizer in action:  
-**[Bubble Sort Visualizer Website](https://sirexlangnmn.github.io/BubbleSortVisualizer/)**
+**[Bubble Sort Visualizer Website](https://sirexlangnmn.github.io/DataStructureVisualizations/BubbleSortVisualizer/index.html)**
 
 ---
 
 ## 📂 Source Code
 
 > 💻 Explore the code, follow updates, or contribute via GitHub:  
-**[GitHub Repository](https://github.com/sirexlangnmn/BubbleSortVisualizer)**
+**[GitHub Repository](https://github.com/sirexlangnmn/DataStructureVisualizations/tree/main/BubbleSortVisualizer)**
 
 ---
 

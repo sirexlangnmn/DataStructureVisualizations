@@ -68,14 +68,14 @@ Insertion Sort was designed as a:
 ## 🔴 Live Demo
 
 Try out the interactive visualizer here:  
-👉 **[Insertion Sort Visualizer (Live)](https://sirexlangnmn.github.io/InsertionSortVisualizer/)**
+👉 **[Insertion Sort Visualizer (Live)](https://sirexlangnmn.github.io/DataStructureVisualizations/InsertionSortVisualizer/index.html)**
 
 ---
 
 ## 📂 Source Code
 
 Explore and follow the project on GitHub:  
-🔗 **[InsertionSortVisualizer Repository](https://github.com/sirexlangnmn/InsertionSortVisualizer)**
+🔗 **[InsertionSortVisualizer Repository](https://github.com/sirexlangnmn/DataStructureVisualizations/tree/main/InsertionSortVisualizer)**
 
 ---
 

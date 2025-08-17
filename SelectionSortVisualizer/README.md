@@ -68,14 +68,14 @@ Selection Sort was created as a:
 ## 🔴 Live Demo
 
 Try out the interactive visualizer here:  
-👉 **[Selection Sort Visualizer (Live)](https://sirexlangnmn.github.io/SelectionSortVisualizer/)**
+👉 **[Selection Sort Visualizer (Live)](https://sirexlangnmn.github.io/DataStructureVisualizations/SelectionSortVisualizer/index.html)**
 
 ---
 
 ## 📂 Source Code
 
 Explore and follow the project on GitHub:  
-🔗 **[SelectionSortVisualizer Repository](https://github.com/sirexlangnmn/SelectionSortVisualizer)**
+🔗 **[SelectionSortVisualizer Repository](https://github.com/sirexlangnmn/DataStructureVisualizations/tree/main/SelectionSortVisualizer)**
 
 ---
 
