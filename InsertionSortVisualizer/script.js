@@ -219,3 +219,8 @@ let array = [5, 1, 4, 2, 8, 3, 7, 6, 10, 9];
     };
 
     renderArray(array);
+
+
+    function goBack() {
+      window.location.href = '../index.html';
+    }
