@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Insertion Sort Visualizer</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <h1>Insertion Sort Visualizer</h1>
+
+  <div class="layout">
+    <div class="buttons">
+      <button id="autoBtn">Run Automatically</button>
+      <button id="stepBtn">Step-by-Step</button>
+    </div>
+
+    <div class="visualization">
+      <div class="container" id="arrayContainer"></div>
+      <div id="status"></div>
+    </div>
+
+    <div>
+      <h3 style="margin-top: 30px;">Python Code</h3>
+      <pre class="code-block" id="pythonCode">
+<span id="line1">def insertion_sort(arr):</span>
+<span id="line2">    for i in range(1, len(arr)):</span>
+<span id="line3">        key = arr[i]</span>
+<span id="line4">        j = i - 1</span>
+<span id="line5">        while j >= 0 and arr[j] > key:</span>
+<span id="line6">            arr[j + 1] = arr[j]</span>
+<span id="line7">            j -= 1</span>
+<span id="line8">        arr[j + 1] = key</span>
+<span id="line9">    return arr</span>
+      </pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
